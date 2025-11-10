@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+html {
+            background-color: rgb(66, 65, 65);
+         }
+
+         p {
+            color: aliceblue;
+         }
+
+         a {
+            color:aliceblue;
+            font-size:x-large;
+         }
+        
+        div img {
+            width:250px;
+            height:250px;
+
+            
+        }
+         
+        
+
+
+        .header{color: rgb(13, 84, 60);
+               background-color: rgb(64, 63, 63);
+               width: 100%;
+               height: 50px;
+               position: sticky;
+               display: flex;
+               word-spacing: 20px;
+               justify-content: space-around;
+               align-items:center;
+            
+               
+               
+               
+
+               
+        }
+         
+        .nav-bar {
+            
+            background-color:grey;
+            width:100%;
+            height: 50px;
+            text-align:center;
+            text-justify: distribute;
+            position:sticky;
+            word-spacing: 120px;
+            align-items: center;
+            
+            
+            
+        }
+        
+
+        
+         .container {
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+         }
+        
+        .box { 
+             
+             transition: 0.5s;
+
+        }
+        
+
+        .box:hover {
+            transform: scale(1.1);
+            z-index:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+        <a href="Login.html">Login</a>
+        <a href="Sign up.html">Sign up</a>
+        </div>
+
+        <div>
+        <input type="text" input>
+        <a href="Search.html"><button>Search</button></a>
+        </div>
+    </div>
+       
+    <div class="nav-bar">
+        <div>
+        <a href="Brands.html">Brands</a>
+        <a href="New.html">New</a>
+        <a href="Men.html">Men</a>
+        <a href="Women.html">Women</a>
+        <a href="Sneaker.html">Sneakers</a>
+        <a href="Accessories.html">Accessories</a>
+        </div>
+    </div>
+
+    <div>
+      <h1>Recommended For You</h1>
+    </div>
+       
+    <div class="container">
+        <div class="box">
+                <img src="data:image/jpeg;base64,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">
+                <p>Puma Speedcat Black</p>
+                <p>Lowest Ask</p>
+                <p>350$$</p>
+                <p>Last sale:330$</p>
+            </div>
+            <div class="box">
+                <img src="data:image/jpeg;base64,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">
+                <p>Adidas Samba Pink</p>
+                <p>Lowest Ask</p>
+                <p>220$</p>
+                <p>Last sale:200$</p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKfn50MsegShpaLkDV8z6X-25KUfbvB-72Vg&s">
+                <p>Adidas Running Shoe</p>
+                <p>Lowest Ask</p>
+                <p>170$</p>
+                <p>Last sale:150$</p>
+            </div>
+    
+            </div>
+        
+    
+            
+    
+    
+</body>
+</html>
